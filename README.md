@@ -20,3 +20,5 @@ dependencies:
 - libspectre
 - libX11 (optional)
 - libwayland (optional)
+
+all the keys can be modified in include/config.h
