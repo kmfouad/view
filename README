@@ -10,6 +10,18 @@ or
 
 $ make X11=1 WAYLAND=1
 
+keys
+[n]j
+go down n pages, defaults to 1
+[n]k
+go up n pages, defaults to 1
+G
+go to to the end of the book
+g
+go to the start of the book
+u
+undo last multipage jump, can undo the undo
+
 dependencies:
 
 - xxhash
