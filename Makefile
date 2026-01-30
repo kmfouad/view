@@ -26,8 +26,14 @@ endif
 all: view
 
 view: $(SRC)
-	$(CC) $(CFLAGS) $^ -o $@ $(LIBS) -I/usr/include/freetype2 -Ilibs
+	$(CC) $(CFLAGS) $^ -o $@ $(LIBS)
 
 xdg-shell.c:
 	wayland-scanner private-code  < /usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml > xdg-shell.c
 	wayland-scanner client-header < /usr/share/wayland-protocols/stable/xdg-shell/xdg-shell.xml > xdg-shell.h
+
+.PHONY: clean install
+clean:
+	rm -f view xdg-shell.c xdg-shell.h
+install: view
+	cp view $(DESTDIR)/bin/view
