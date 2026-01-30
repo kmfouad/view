@@ -23,7 +23,7 @@ void fb_flush(struct FB *);
 #include <sys/mman.h>
 #include <linux/fb.h>
 #include <sys/ioctl.h>
-#include <util/estd.h>
+#include "estd.h"
 
 static void
 terminal_instant(int n) {

@@ -30,7 +30,7 @@ void x11_free(x11 *);
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
-#include <util/estd.h>
+#include "estd.h"
 #include <X11/keysym.h>
 
 x11 *

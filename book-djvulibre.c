@@ -1,8 +1,8 @@
-#include <util/estd.h>
+#include "estd.h"
 #include <libdjvu/ddjvuapi.h>
-#include "../include/globals.h"
-#include "../include/book.h"
-#include "../include/book-djvu.h"
+#include "globals.h"
+#include "book.h"
+#include "book-djvu.h"
 
 
 typedef struct DjvuLibre {

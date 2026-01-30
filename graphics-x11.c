@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <util/estd.h>
+#include "estd.h"
 #define X11_IMP
-#include <driver/x11.h>
-#include "../include/globals.h"
-#include "../include/graphics.h"
-#include "../include/graphics-x11.h"
-#include "../include/util.h"
+#include "x11.h"
+#include "globals.h"
+#include "graphics.h"
+#include "graphics-x11.h"
+#include "util.h"
 
 #define xorg ((x11*)disp)
 

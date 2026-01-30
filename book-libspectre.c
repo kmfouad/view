@@ -1,9 +1,9 @@
 #include <string.h>
-#include <util/estd.h>
+#include "estd.h"
 #include <libspectre/spectre.h>
-#include "../include/globals.h"
-#include "../include/book.h"
-#include "../include/book-ps.h"
+#include "globals.h"
+#include "book.h"
+#include "book-ps.h"
 
 typedef struct LibSpectre {
     SpectreDocument *doc;

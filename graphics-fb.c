@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdint.h>
 #define FB_IMP
-#include <driver/fb.h>
-#include "../include/globals.h"
-#include "../include/graphics.h"
-#include "../include/graphics-fb.h"
+#include "fb.h"
+#include "globals.h"
+#include "graphics.h"
+#include "graphics-fb.h"
 
 #define fb ((FB*)disp)
 

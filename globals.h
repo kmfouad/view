@@ -1,8 +1,8 @@
 #ifndef VIEW_GLOBALS_H
 #define VIEW_GLOBALS_H
 
-#include <driver/fb.h>
-#include <driver/x11.h>
+#include "fb.h"
+#include "x11.h"
 #include "book.h"
 
 #ifdef VIEW_STORAGE

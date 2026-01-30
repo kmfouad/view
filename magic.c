@@ -1,6 +1,6 @@
 #include <stddef.h>
 #include <magic.h>
-#include "../include/magic.h"
+#include "magic.h"
 
 const char *
 get_mimetype(const char *path) {

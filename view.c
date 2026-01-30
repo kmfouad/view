@@ -6,19 +6,19 @@
 #include <mupdf/fitz.h>
 
 #define VIEW_STORAGE
-#include <util/estd.h>
-#include "../include/globals.h"
-#include "../include/db.h"
-#include "../include/magic.h"
-#include "../include/book-pdf.h"
+#include "estd.h"
+#include "globals.h"
+#include "db.h"
+#include "magic.h"
+#include "book-pdf.h"
 #ifdef VIEW_FB
-#include "../include/graphics-fb.h"
+#include "graphics-fb.h"
 #endif
 #ifdef VIEW_X11
-#include "../include/graphics-x11.h"
+#include "graphics-x11.h"
 #endif
 #ifdef VIEW_WAY
-#include "../include/graphics-way.h"
+#include "graphics-way.h"
 #endif
 
 static DB *db;

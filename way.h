@@ -52,8 +52,8 @@ void way_free(Way *);
 #include <sys/stat.h>
 #include <time.h>
 #include <unistd.h>
-#include <util/estd.h>
-#include "../../gen/xdg-shell.h"
+#include "estd.h"
+#include "xdg-shell.h"
 
 static void wl_output_real(void *a, struct wl_output *b, int x, int y, int w, int h, int sp, const char *m, const char *mo, int t) {}
 static void wl_output_geo(void *data, struct wl_output *wl_output, uint32_t flags, int w, int h, int rate) {

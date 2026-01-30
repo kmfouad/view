@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdint.h>
-#include <util/estd.h>
+#include "estd.h"
 #define WAY_IMP
-#include <driver/way.h>
-#include "../include/globals.h"
-#include "../include/graphics.h"
-#include "../include/graphics-way.h"
-#include "../include/util.h"
+#include "way.h"
+#include "globals.h"
+#include "graphics.h"
+#include "graphics-way.h"
+#include "util.h"
 
 #define way ((Way*)disp)
 #define D() printf("%s: %d\n", __func__, __LINE__);

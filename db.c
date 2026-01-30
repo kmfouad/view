@@ -5,8 +5,8 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <xxhash.h>
-#include <util/estd.h>
-#include "../include/db.h"
+#include "estd.h"
+#include "db.h"
 
 #define HASH_LEN 16
 #define HASH_BASE 16

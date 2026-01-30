@@ -1,10 +1,10 @@
 #include <mupdf/fitz.h>
-#include <util/estd.h>
+#include "estd.h"
 
-#include "../include/magic.h"
-#include "../include/globals.h"
-#include "../include/book-pdf.h"
-#include "../include/util.h"
+#include "magic.h"
+#include "globals.h"
+#include "book-pdf.h"
+#include "util.h"
 
 typedef struct Mupdf {
     fz_context *ctx;

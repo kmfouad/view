@@ -1,13 +1,13 @@
 #include <stdlib.h>
 #include <string.h>
-#include <util/estd.h>
-#include "../include/globals.h"
-#include "../include/book.h"
-#include "../include/magic.h"
+#include "estd.h"
+#include "globals.h"
+#include "book.h"
+#include "magic.h"
 
-#include "../include/book-pdf.h"
-#include "../include/book-djvu.h"
-#include "../include/book-ps.h"
+#include "book-pdf.h"
+#include "book-djvu.h"
+#include "book-ps.h"
 
 Book *
 book_init(int page_count) {
