@@ -26,11 +26,7 @@ static const char *path;
 
 static void
 rand_init(void) {
-    unsigned seed;
-
-    //__asm__ ("rdrand %0\n" : "=r" (seed));
-    seed = time(NULL);
-    srand48(seed);
+    srand48(time(NULL));
 }
 
 void
@@ -40,14 +36,22 @@ view_quit(void) {
     exit(1);
 }
 
+void
+usage(void) {
+   fprintf(stderr, "Usage: view [-s] file\n");
+   exit(1);
+}
+
 int
 main(int argc, char **argv) {
     int n = 0, arg = 1;
 
     if(argc < 2)
-        die("view", "Not enough arguments");
+        usage();
 
     if(strcmp(argv[1], "-s") == 0) {
+        if(argc < 3)
+            usage();
         db_flag = 0;
         arg++;
     }
