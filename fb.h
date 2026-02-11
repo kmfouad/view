@@ -73,7 +73,7 @@ fb_free(struct FB *fb) {
 void
 fb_flush(struct FB *fb) {
     // hack
-    write(fb->fd, "\0", 1);
+    write(fb->fd, "", 1);
 }
 
 #endif
