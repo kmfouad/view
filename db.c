@@ -78,9 +78,7 @@ db_add(DB *db, const char *path, int prog) {
         fgets(buf, sizeof(buf), f);
     }
     fseek(f, 0, SEEK_END);
-    fprintf(f, "%016lx ", hash);
-    fprintf(f, "%10d ", prog);
-    fprintf(f, "%s\n", path);
+    fprintf(f, "%016lx %10d %s\n", hash, prog, path);
     fclose(f);
     return 0;
 }
