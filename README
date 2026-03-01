@@ -24,6 +24,7 @@ undo last multipage jump, can undo the undo
 
 dependencies:
 
+- file
 - xxhash
 - mupdf
 - djvulibre
