@@ -2,11 +2,11 @@ view
 
 view is a minimal document viewer, it features vi-like keybindings, and uses a simple text file to keep track of reading progress in ~/.local/share/view/books.txt
 
-to build it run
+to build the minial framebuffer version it run
 
 $ make
 
-or
+or for the version supporting wayland/x11 (and the framebuffer) run
 
 $ make X11=1 WAYLAND=1
 
@@ -27,4 +27,4 @@ dependencies:
 - libX11 (optional)
 - libwayland (optional)
 
-all the keys can be modified in include/config.h
+all the keys can be modified in config.h
